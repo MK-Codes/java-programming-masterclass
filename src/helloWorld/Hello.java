@@ -6,8 +6,11 @@ public class Hello {
 
 		System.out.println("Hello, Clarise. (I'm not too imaginative.)");
 		
-		int myInteger = (10 + 5) + (2 * 10);
-		System.out.println(myInteger);
+		int myFirstNumber = (10 + 5) + (2 * 10);
+		int mySecondNumber = 12;
+		int myThirdNumber = myFirstNumber * 2;
+		int myTotal = myFirstNumber + mySecondNumber + myThirdNumber;
+		System.out.println(myTotal);
 	}
 
 }
