@@ -43,7 +43,7 @@ public class Main {
 		short myShort = 1337;
 		int myInt = 80081;
 		
-		long myFinalLong = 50_000 + (10 * (myByte + myShort + myInt));
+		long myFinalLong = 50_000L + (10 * (myByte + myShort + myInt));
 		System.out.println("Value of myLong: " + myFinalLong);
 	}
 
