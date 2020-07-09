@@ -27,6 +27,15 @@ public class Main {
 		long myMaxLongValue = Long.MAX_VALUE;
 		System.out.println("Long min val: " + myMinLongValue);
 		System.out.println("Long max val: " + myMaxLongValue);
+		
+		int myTotal = (myMinIntValue / 2);
+		byte myNewByteValue = (byte) (myMinByteValue / 2);
+		System.out.println("Min int divided by two: " + myTotal);
+		System.out.println("Min byte divided by two: " + myNewByteValue);
+		
+		short myNewShortValue = (short) (myMinShortValue / 2);
+		
+		System.out.println("Min short divided by 2: " + myNewShortValue);
 	}
 
 }
