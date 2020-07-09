@@ -36,6 +36,15 @@ public class Main {
 		short myNewShortValue = (short) (myMinShortValue / 2);
 		
 		System.out.println("Min short divided by 2: " + myNewShortValue);
+		
+		// Challenge - creaate byte, short, int - then create long that is 50,000 plus 10 times the rest
+		
+		byte myByte = 23;
+		short myShort = 1337;
+		int myInt = 80081;
+		
+		long myFinalLong = 50_000 + (10 * (myByte + myShort + myInt));
+		System.out.println("Value of myLong: " + myFinalLong);
 	}
 
 }
