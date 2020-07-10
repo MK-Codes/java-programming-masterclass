@@ -4,7 +4,8 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		int myValue = 10_000;
+		int myValue = 10_000; 
+		System.out.println(myValue);
 		
 		int myMinIntValue = Integer.MIN_VALUE;
 		int myMaxIntValue = Integer.MAX_VALUE;
