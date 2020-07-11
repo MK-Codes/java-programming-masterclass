@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		char charOne = 'ᚠ'; // single character, letter, number, symbol, etc.
+		char charOne = 'F'; // single character, letter, number, symbol, etc.
 		char charTwo = '\u16A2'; // Unicode referencing
 		char charThree = 0x16A3; // Referencing hex Unicode directly
 		
@@ -17,6 +17,8 @@ public class Main {
 		
 		boolean myTrueBoolean = true;
 		boolean myFalseBoolean = false;
+		
+		boolean isCustomerOverTwentyOne = true; // varname poised as question
 		
 		System.out.println(myTrueBoolean);
 		System.out.println(myFalseBoolean);
