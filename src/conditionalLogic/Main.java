@@ -23,6 +23,14 @@ public class Main {
 		if ((topScore > 90) || (secondTopScore <= 90)) {
 			System.out.println("Either or both of the conditions are true.");
 		}
+		
+		// Ternary operator
+		boolean isCar = true;
+		
+		boolean wasCar = isCar ? true : false;
+		
+		System.out.println(wasCar);
+		
 	}
 
 }
