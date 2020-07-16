@@ -17,9 +17,17 @@ public class Main {
 			System.out.println("Your score was 10,000 or more.");
 		}
 
-		if (gameOver == true) {
+		if (gameOver) {
 			int finalScore = score + (levelCompleted * bonus);
 			System.out.println("Your final score was " + finalScore);
+		}
+		
+		score = 10_000;
+		levelCompleted = 8;
+		bonus = 200;
+		if (gameOver) {
+			int finalScore = score + (levelCompleted * bonus);
+			System.out.println("Challenge score was " + finalScore);
 		}
 	}
 
