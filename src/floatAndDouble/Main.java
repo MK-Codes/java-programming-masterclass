@@ -29,6 +29,7 @@ public class Main {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("How many pounds to convert to kgs?");
 		double poundValue = scanner.nextDouble();
+		scanner.close();
 		double noOfKilos = poundValue * ratio;
 
 		System.out.println(poundValue + "lbs is equal to " + noOfKilos + "kgs.");
