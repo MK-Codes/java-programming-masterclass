@@ -50,16 +50,16 @@ public class Main {
 
 	public static int calculateHighScorePosition(int highScore) {
 
-		int highScorePosition;
-		if (highScore > 1_000) {
+		int highScorePosition = 4;
+
+		if (highScore >= 1_000) {
 			highScorePosition = 1;
-		} else if (highScore > 500) {
+		} else if (highScore >= 500) {
 			highScorePosition = 2;
-		} else if (highScore > 100) {
+		} else if (highScore >= 100) {
 			highScorePosition = 3;
-		} else {
-			highScorePosition = 4;
 		}
+s
 		return highScorePosition;
 	}
 }
