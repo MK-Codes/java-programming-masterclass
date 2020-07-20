@@ -56,10 +56,10 @@ public class Main {
 			highScorePosition = 1;
 		} else if (highScore >= 500) {
 			highScorePosition = 2;
-		} else if (highScore >= 100) {
+		} else if (highScore >= 1000) {
 			highScorePosition = 3;
 		}
-s
+
 		return highScorePosition;
 	}
 }
