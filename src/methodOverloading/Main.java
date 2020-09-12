@@ -10,8 +10,8 @@ public class Main {
 		System.out.println("Unnamed player score is " + unnamedScore + ".");
 		calculateScore();
 
-		System.out.println(calcFeetAndInchesToCentimeters(1, 4));
-		System.out.println(calcFeetAndInchesToCentimeters(0, 12));
+		calcFeetAndInchesToCentimeters(1, 4);
+		calcFeetAndInchesToCentimeters(0, 12);
 	}
 
 	public static int calculateScore(String playerName, int score) {
@@ -32,11 +32,14 @@ public class Main {
 
 	public static double calcFeetAndInchesToCentimeters(double feet, double inches) {
 
-		if (feet < 0 || inches < 0 || inches >= 12) {
+		if ((feet < 0) || ((inches < 0) && (inches >= 12))) {
+			System.out.println("Invalid parameters.");
 			return -1;
 		}
 
-		return (calcFeetAndInchesToCentimeters((feet * 12) + inches));
+		double cm = calcFeetAndInchesToCentimeters((feet * 12) + inches);
+		System.out.println(feet + " feet and " + inches + " inches is equal to " + cm + "cm.");
+		return cm;
 	}
 
 	public static double calcFeetAndInchesToCentimeters(double inches) {
