@@ -13,8 +13,9 @@ public class Main {
 		// double
 		// char
 		// boolean
-		
+
 		// String is not a primitive, but built-in
+		// (Note the capital letter - it's going to be useful for when I know about boxed vals (Integer, etc.))
 		String myString = "This is a string";
 		System.out.println("myString: " + myString);
 		myString = myString + ", and this is more.";
