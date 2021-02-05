@@ -3,6 +3,12 @@ package codingExercises.numberOfDaysInMonth;
 public class Main {
     public static void main(String[] args) {
 
+        System.out.println(getDaysInMonth(1,1992));
+        System.out.println(getDaysInMonth(4,2019));
+        System.out.println(getDaysInMonth(2,2000));
+        System.out.println(getDaysInMonth(2,2001));
+        System.out.println(getDaysInMonth(2,2004));
+        System.out.println(getDaysInMonth(2,1900));
     }
 
     public static boolean isLeapYear(int year) {
