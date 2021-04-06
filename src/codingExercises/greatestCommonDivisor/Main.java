@@ -27,7 +27,6 @@ public class Main {
 
 	}
 
-	// This one's messy. Looking forward to refactoring...
 
 	public static int getGreatestCommonDivisor(int first, int second) {
 
@@ -37,21 +36,14 @@ public class Main {
 
 		int divisor = 1;
 		int minimum = Math.min(first, second);
-		int initMin = Math.min(first, second);
-		int maximum = Math.max(first, second);
-		System.out.println("MIN: " + minimum);
-		System.out.println("MAX: " + maximum);
-		boolean found = false;
-		while (!found) {
-			System.out.println("Loop");
-			if ((maximum % minimum == 0) && (initMin % minimum == 0)) {
-				System.out.println("Hit divisor! Min = " + minimum + ", max = " + maximum);
+
+		while (minimum > 1) {
+			if ((first % minimum == 0) && (second % minimum == 0)) {
 				divisor = minimum;
-				found = true;
+				break;
 			} else {
 				minimum -= 1;
 			}
-
 		}
 		return divisor;
 	}
